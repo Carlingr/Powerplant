@@ -1,7 +1,7 @@
 /*
   Ringoes_Powerplant_Script.ino
   V2.1.2.1
-  ©2015 Carlin Greenfield
+  Written by Carlin Greenfield
   This script primarily operates the Sparkfun Bar Graph (Product Number:COM-09938)
   The Bar Graph will go up by 4 every time the "Dump" Button (Attached to A0) is Pressed
   The graph will go down pne bar every 22.5 Seconds, This can be changed by changing int SingleBarValue
