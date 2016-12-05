@@ -1,0 +1,65 @@
+***CHANGELOG.TXT***
+***THIS FILE LISTS THE CHANGES MADE TO THE RINGOES POWERPLANT SCRIPT SINCE V2.0.0, WHEN THE CHANGELOG WAS INSTITUTED***
+
+V2.0.0
+Relocated Pins to Add SD Card capibility
+	Shift Regester SER(Data)-5
+	Shift Regester RCLK(Latch)-6
+	Shift Regester SRCLK(Clock)-7
+	Graph Nine-2
+	Graph Ten-3
+	Pins 4+11-13 Will be used for the SD Card
+Added SD Capibility, Now reads values from SD Card
+Also prints values of Variables when shut down
+Corrected code, Error checker function is now invoked in normal loop
+Added error checker for if Coal is over 10
+
+V2.0.1
+Moved The User Interface LED from pin 13 to pin 8.
+
+V2.0.1.1
+Corrected Small typographical error in Error code in Line 67
+
+V2.0.1.2
+Removed Script.txt from file, Corrected README.txt to reflect new file order
+added notes to Shematic.xcf and Script.ino on how to open them.
+
+V2.0.2.0
+Fixed Error Where User Interface LED Would not blink
+Changed variable "UsrInterfaceLED" to "UILED"
+Changed code to use function to print Error Code, integrated function into rest of code
+Fixed Error in discription of Line 309
+Fixed Typographical Error comments of line 80
+Removed code in function "void ClockCount" that would return ghost error
+
+V2.0.2.1
+Set UILED to turn on during setup
+
+V2.0.3.0
+Moved loding variable states to an else condition so that code will not attempt to open files if SD Card not present
+Made such that program would not write variable when powered down if Unable to load SD Card
+Corrected "void PowerDown" function to use ErrPrint
+Corrected description of lines 85, 116, 228, 299, 304, and 399 to reflect ErrPrint Function
+Corrected Typographical Error in line 397
+Simplified Code to load Coal from Text file
+
+V2.0.3.1
+Rearrainged line 129-154
+	Corrected errors in Description of code
+	Added while loop to keep functio frm being called twice with same push.
+
+V2.1.0.0
+Created Fritzing File
+
+V2.1.1.0
+Added Function to print when in debug mode for effiency.
+Used Smaller data types where posible.
+Made int DebugMode into boolian
+
+V2.1.2.0
+Corrected Typo in Line 198
+moved index decleration into for loops
+used #define instead of const for constants to save space.
+
+V2.1.2.0
+Moved GphData to GraphLevelSet so it dosnt take up memry for whole sketch.
